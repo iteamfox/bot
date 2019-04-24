@@ -12,3 +12,7 @@ git push origin master
 последний коммит git branch -v: 
 
 git config http.postBuffer 524288000  увеличить репозиторий (буфер)
+
+
+git config --global gui.encoding utf-8   кодировка дл€ всех репозиториев
+git config gui.encoding utf-8     дл€ одного
