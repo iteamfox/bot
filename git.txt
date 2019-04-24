@@ -1,4 +1,4 @@
-﻿git 
+git 
 git remote rm orirgin удалить 
 git remote -v URL соответствует сокращённое имя в Git
 
@@ -22,4 +22,4 @@ error:403
 git config --global --add remote.origin.proxy ""
 git config --global http.sslBackend "openssl"
 
-utf-8 после notepad++
+utf-8
