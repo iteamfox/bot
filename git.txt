@@ -10,3 +10,5 @@ git pull origin master --allow-unrelated-histories
 git push origin master
 
 последний коммит git branch -v: 
+
+git config http.postBuffer 524288000  увеличить репозиторий (буфер)
