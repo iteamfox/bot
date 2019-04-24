@@ -16,3 +16,8 @@ git config http.postBuffer 524288000  увеличить репозиторий (буфер)
 
 git config --global gui.encoding utf-8   кодировка для всех репозиториев
 git config gui.encoding utf-8     для одного
+
+
+error:403
+git config --global --add remote.origin.proxy ""
+git config --global http.sslBackend "openssl"
