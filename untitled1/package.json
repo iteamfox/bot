@@ -1,15 +1,17 @@
 {
   "name": "fox-telegram-bot",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "node-telegram-bot-api": "^0.30.0"
   },
-  "devDependencies": {},
-  "description": ""
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
 }

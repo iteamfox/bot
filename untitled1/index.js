@@ -16,12 +16,119 @@ const bot = new TelegramBot(TOKEN,{
     }
 });
 
-//10 Инлайн клавиатура
-bot.on('message', msg => {
+// 12,13,14,15  
+const inline_keyboard = [
+    [
+        {
+            text:'Forward',
+            callback_data:'forward'
+        },
+        {
+            text:'Reply',
+            callback_data:'reply'
+        }
+    ],
+    [
+        {
+            text:'Edit',
+            callback_data:'edit'
+        },
+        {
+            text:'Delete',
+            callback_data:'delete'
+        }
+    ]
+];
+
+bot.on('callback_query', query =>{
+    const {chat, message_id, text} = query.message;
+   switch (query.data) {
+       case 'forward':
+           //куда, откуда, что
+           bot.forwardMessage(chat.id, chat.id,message_id);
+           break
+       case 'reply':
+           bot.sendMessage(chat.id, `Answer on message`,{
+               reply_to_message_id: message_id
+           })
+           break
+       case 'edit':
+           bot.editMessageText(`${text} (edited)`, {
+               chat_id: chat.id,
+               message_id: message_id,
+               reply_markup: {inline_keyboard}
+           })
+           break
+       case 'delete':
+           bot.deleteMessage(chat.id, message_id)
+           break
+   }
+   bot.answerCallbackQuery({
+       callback_query_id: query.id
+   })
+});
+
+bot.onText(/\/start/,(msg, [source,match]) => {
     const chatId = msg.chat.id;
+    bot.sendMessage(chatId, 'Keyboard', {
+        reply_markup:{
+            inline_keyboard
+        }
+    })
 });
 
 
+// 11  Обработка инлайн запросов
+// bot.on('inline_query', query => {
+//     const results = [];
+//
+//     for (let i = 0; i<5;i++){
+//         results.push({
+//             type: 'article',
+//             id: i.toString(),
+//             title: 'Title' +i,
+//             input_message_content:{
+//                 message_text: `Article #${i+1}`
+//             }
+//         })
+//     }
+//     bot.answerInlineQuery(query.id, results, {
+//         cache_time: 0
+//     })
+// });
+
+//10 Инлайн клавиатура
+// bot.on('message', msg => {
+//     const chatId = msg.chat.id;
+//     bot.sendMessage(chatId, 'Inline keyboard', {
+//         reply_markup: {
+//             inline_keyboard: [
+//                 [
+//                     {
+//                         text: 'Google',
+//                         url: 'https://google.com'
+//                     }
+//                 ],
+//                 [
+//                     {
+//                         text: 'Reply',
+//                         callback_data: 'reply'
+//                     },
+//                     {
+//                         text: 'Forward',
+//                         callback_data: 'forward'
+//                     }
+//                 ]
+//             ]
+//         }
+//     })
+// });
+//
+// bot.on('callback_query', query => {
+//     // bot.sendMessage(query.message.chat.id, debug(query))
+//
+//     bot.answerCallbackQuery(query.id, `${query.data}`)
+// });
 
 //9 клавиатура пользователю
 // bot.on('message', msg => {
