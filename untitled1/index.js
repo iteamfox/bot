@@ -1,3 +1,4 @@
+process.env["NTBA_FIX_319"] = 1;
 const TelegramBot = require('node-telegram-bot-api');
 const debug = require('./helpers');
 const TOKEN = '894155936:AAHMCW9yfPRvgtckrjweKhVgQGuE39hQAoI';
@@ -15,55 +16,61 @@ const bot = new TelegramBot(TOKEN,{
     }
 });
 
-//9 клавиатура пользователю
+//10 Инлайн клавиатура
 bot.on('message', msg => {
     const chatId = msg.chat.id;
-    
-    if (msg.text === 'Clothe') {
-
-        bot.sendMessage(chatId, 'Clothe keyboard', {
-            reply_markup:{
-                remove_keyboard: true
-            }
-        })
-
-        } else if (msg.text === 'Reply'){
-
-        bot.sendMessage(chatId, 'Answer',{
-            reply_markup:{
-                force_reply_: true
-            }
-        })
-    } else {
-        bot.sendMessage(chatId,'Keyboards',{
-            reply_markup:{
-                keyboard: [
-                    [{
-                        text: 'Send location',
-                        request_location: true
-                    }],
-                    ['Reply', 'Clothe'],
-                    [{
-                    text: 'Send contact',
-                        request_contact: true
-                    }]
-                ],
-                one_time_keyboard: true
-            }
-        })
-    }
-    
-    // bot.sendMessage(chatId,'Keyboards',{
-    //     reply_markup:{
-    //         keyboard: [
-    //             ['Send location'],
-    //             ['Reply', 'Clothe'],
-    //             ['Send contact']
-    //         ]
-    //     }
-    // })
 });
 
+
+
+//9 клавиатура пользователю
+// bot.on('message', msg => {
+//     const chatId = msg.chat.id;
+//
+//     if (msg.text === 'Clothe') {
+//
+//         bot.sendMessage(chatId, 'Clothe keyboard', {
+//             reply_markup:{
+//                 remove_keyboard: true
+//             }
+//         })
+//
+//         } else if (msg.text === 'Reply'){
+//
+//         bot.sendMessage(chatId, 'Answer',{
+//             reply_markup:{
+//                 force_reply: true
+//             }
+//         })
+//     } else {
+//         bot.sendMessage(chatId,'Keyboards',{
+//             reply_markup:{
+//                 keyboard: [
+//                     [{
+//                         text: 'Send location',
+//                         request_location: true
+//                     }],
+//                     ['Reply', 'Clothe'],
+//                     [{
+//                     text: 'Send contact',
+//                         request_contact: true
+//                     }]
+//                 ],
+//                 one_time_keyboard: true
+//             }
+//         })
+//     }
+//
+//     // bot.sendMessage(chatId,'Keyboards',{
+//     //     reply_markup:{
+//     //         keyboard: [
+//     //             ['Send location'],
+//     //             ['Reply', 'Clothe'],
+//     //             ['Send contact']
+//     //         ]
+//     //     }
+//     // })
+// });
 
 //8 доп опции sendMessage
 // bot.on('message', msg => {
@@ -92,8 +99,6 @@ bot.on('message', msg => {
 //
 // });
 
-
-
 //6 отправка HTML
 // bot.on('message', msg => {
 //     const html = `
@@ -107,8 +112,7 @@ bot.on('message', msg => {
 //     })
 // });
 
-
-//5
+//5 Обработка команд
 // bot.onText(/\/start/, msg => {
 //     const {id} = msg.chat;
 //     bot.sendMessage(id, debug(msg))
@@ -118,7 +122,6 @@ bot.on('message', msg => {
 //     const {id} = msg.chat
 //     bot.sendMessage(id, debug(match))
 // });
-
 
 //6
 // bot.on('message', msg => {
@@ -133,8 +136,7 @@ bot.on('message', msg => {
 //     })
 // });
 
-
-//4
+//4 Получение сообщения от пользователя
 // bot.on('message', msg => {
 //     const  {id}= msg.chat;
 //

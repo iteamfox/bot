@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="324c610a-b4b8-407c-b72f-8fcd394b4bcf" name="Default Changelist" comment="" />
+    <list default="true" id="324c610a-b4b8-407c-b72f-8fcd394b4bcf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bluebird/js/browser/bluebird.core.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bluebird/js/browser/bluebird.core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bluebird/js/browser/bluebird.core.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bluebird/js/browser/bluebird.core.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bluebird/js/browser/bluebird.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bluebird/js/browser/bluebird.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bluebird/js/browser/bluebird.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bluebird/js/browser/bluebird.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bluebird/js/release/promise.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bluebird/js/release/util.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bluebird/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bluebird/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/eventemitter3/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/eventemitter3/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/eventemitter3/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/eventemitter3/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mime-db/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mime-db/HISTORY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mime-db/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mime-db/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mime-db/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mime-db/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mime-types/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mime-types/HISTORY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mime-types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mime-types/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/node-telegram-bot-api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/node-telegram-bot-api/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/object-keys/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-keys/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/object-keys/implementation.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-keys/implementation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/object-keys/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-keys/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -24,10 +46,16 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1449">
-              <caret line="71" column="67" selection-start-line="71" selection-start-column="67" selection-end-line="71" selection-end-column="67" />
+            <state relative-caret-position="218">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               <folding>
-                <element signature="e#231#355#0" />
+                <element signature="e#392#419#0" />
+                <element signature="e#1742#1767#0" />
+                <element signature="e#2100#2112#0" />
+                <element signature="e#2349#2366#0" />
+                <element signature="e#2622#2642#0" />
+                <element signature="e#2888#2891#0" />
+                <element signature="e#3147#3186#0" />
               </folding>
             </state>
           </provider>
@@ -36,7 +64,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/helpers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
+            <state>
               <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
             </state>
           </provider>
@@ -52,6 +80,9 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -73,11 +104,12 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="697" />
+    <option name="height" value="745" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -99,7 +131,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled" />
+    <property name="last_opened_file_path" value="E:/untitled1" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -115,7 +147,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.VCS" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -161,11 +193,17 @@
       <workItem from="1555481222514" duration="4684000" />
       <workItem from="1555487085139" duration="5085000" />
       <workItem from="1555935245600" duration="333000" />
+      <workItem from="1556611913720" duration="1396000" />
+      <workItem from="1556613495346" duration="511000" />
+      <workItem from="1556614049489" duration="318000" />
+      <workItem from="1556614612262" duration="549000" />
+      <workItem from="1556615222128" duration="3682000" />
+      <workItem from="1556619059499" duration="829000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22725000" />
+    <option name="totallyTimeSpent" value="30010000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -177,22 +215,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="npm" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49887386" visible="true" weight="0.15170941" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49887386" visible="true" weight="0.10565476" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5011261" side_tool="true" weight="0.22435898" />
+      <window_info id="npm" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32995495" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32941177" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32995495" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32995495" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32941177" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -208,7 +247,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/helpers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
+        <state>
           <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
         </state>
       </provider>
@@ -222,10 +261,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1449">
-          <caret line="71" column="67" selection-start-line="71" selection-start-column="67" selection-end-line="71" selection-end-column="67" />
+        <state relative-caret-position="218">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
-            <element signature="e#231#355#0" />
+            <element signature="e#392#419#0" />
+            <element signature="e#1742#1767#0" />
+            <element signature="e#2100#2112#0" />
+            <element signature="e#2349#2366#0" />
+            <element signature="e#2622#2642#0" />
+            <element signature="e#2888#2891#0" />
+            <element signature="e#3147#3186#0" />
           </folding>
         </state>
       </provider>
