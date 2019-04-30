@@ -16,7 +16,7 @@ const bot = new TelegramBot(TOKEN,{
     }
 });
 
-// 12,13,14,15  
+// 12,13,14,15
 const inline_keyboard = [
     [
         {

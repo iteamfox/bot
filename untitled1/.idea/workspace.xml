@@ -1174,8 +1174,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+            <state relative-caret-position="343">
+              <caret line="48" column="16" lean-forward="true" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
               <folding>
                 <element signature="e#419#629#0" />
                 <element signature="e#392#424#0" />
@@ -1342,12 +1342,12 @@
       <workItem from="1556614612262" duration="549000" />
       <workItem from="1556615222128" duration="3682000" />
       <workItem from="1556619059499" duration="2921000" />
-      <workItem from="1556622081844" duration="7482000" />
+      <workItem from="1556622081844" duration="7555000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39584000" />
+    <option name="totallyTimeSpent" value="39657000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1368,7 +1368,7 @@
       <window_info id="npm" order="3" sideWeight="0.5037594" side_tool="true" weight="0.10565476" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21512605" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.21512605" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1412,8 +1412,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        <state relative-caret-position="343">
+          <caret line="48" column="16" lean-forward="true" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
           <folding>
             <element signature="e#419#629#0" />
             <element signature="e#392#424#0" />
