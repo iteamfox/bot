@@ -1,9 +1,8 @@
-git 
+﻿git 
 git remote rm orirgin удалить 
 git remote -v URL соответствует сокращённое имя в Git
 
 rm .git/index  https://thoughtbot.com/blog/how-to-fix-rm-f-git-index
-
 
 
 git pull origin master --allow-unrelated-histories 
@@ -13,10 +12,8 @@ git push origin master
 
 git config http.postBuffer 524288000  увеличить репозиторий (буфер)
 
-
 git config --global gui.encoding utf-8   кодировка для всех репозиториев
 git config gui.encoding utf-8     для одного
-
 
 error:403
 git config --global --add remote.origin.proxy ""
