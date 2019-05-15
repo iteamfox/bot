@@ -1,6 +1,7 @@
 process.env["NTBA_FIX_319"] = 1;
 const TelegramBot = require('node-telegram-bot-api');
 const debug = require('./helpers');
+const fs = require('fs');
 const TOKEN = '894155936:AAHMCW9yfPRvgtckrjweKhVgQGuE39hQAoI';
 
 
@@ -16,12 +17,117 @@ const bot = new TelegramBot(TOKEN,{
     }
 });
 
-//16 Отправка картинок
-bot.on(/\/pic/,  msg=> {
+//Create and payment product
+//632593626:TEST:i56982357197
+//
+// bot.onText(/\/pay/,msg=>{
+//     const chatId = msg.chat.id;
+//     bot.sendInvoice(
+//         chatId,
+//         'Moskvich 412',
+//         'Best car ever in telegram bot',
+//         'payload',
+//         '632593626:TEST:i56982357197',
+//         'some_random_string_key',
+//         'USD',
+//         [
+//             {
+//                 label: 'moskvich_412',
+//                 amount: 10000
+//             }
+//         ],
+//         {
+//             photo_url: 'http://avto-samodelki.ru/wp-content/uploads/2018/01/moskvich-412-tyuning-21.jpg',
+//             need_name: true,
+//             is_flexible: true
+//         })
+// });
 
-});
+// 22 Send contact
+// bot.onText(/\/con/, msg =>{
+//     bot.sendContact(msg.chat.id, '0634461558', 'Alexandr',
+//         {last_name: 'Lisunenko'})
+// });
 
+// 21 Send geo location
+// bot.onText(/\/loc/, msg=>{
+//     bot.sendLocation(msg.chat.id, 48.419253, 35.067784)
+// });
 
+// 20 Send video
+// bot.onText(/\/v1/,msg =>{
+//     const chatId = msg.chat.id
+//     bot.sendMessage(chatId, 'Sending video ...')
+//     bot.sendVideo(chatId, 'http://techslides.com/demos/sample-videos/small.mp4')
+// });
+// bot.onText(/\/v2/,msg =>{
+//     const chatId = msg.chat.id
+//     bot.sendMessage(chatId, 'Sending video ...')
+//     bot.sendVideo(chatId, './small.mp4')
+// });
+// bot.onText(/\/v3/,msg =>{
+//     const chatId = msg.chat.id
+//     bot.sendMessage(chatId, 'Sending video ...')
+//     fs.readFile(__dirname + '/small.mp4', (err, video)=>{
+//         bot.sendVideoNote(chatId, video)
+//     })
+// });
+
+// 19 Send sticker
+// bot.onText(/\/s1/, msg =>{
+//     bot.sendSticker(msg.chat.id, './sticker.webp')
+// });
+// bot.onText(/\/s2/, msg =>{
+//     fs.readFile(__dirname + '/sticker.webp', (err, sticker)=>{
+//         bot.sendSticker(msg.chat.id, sticker)
+//     })
+// });
+
+//18 Send file
+// bot.onText(/\/doc1/, msg => {
+//
+//     bot.sendDocument(msg.chat.id, './wfm.xlsx')
+// });
+//
+// bot.onText(/\/doc2/, msg => {
+//     bot.sendMessage(msg.chat.id, 'Uploading...')
+//         fs.readFile(__dirname + '/wfm.zip', (err, file) => {
+//             bot.sendDocument(msg.chat.id, file, {
+//                 caption: 'Additional text'
+//             }).then(() => {
+//                 bot.sendMessage(msg.chat.id, 'Upload finish')
+//             })
+//         })
+// });
+
+// 17 Send audio
+// bot.onText(/\/audio/, msg => {
+//
+//     bot.sendAudio(msg.chat.id, './maruv.mp3')
+// });
+// bot.onText(/\/audio2/, msg => {
+//     bot.sendMessage(msg.chat.id, 'Start audio uploading...')
+//     fs.readFile(__dirname + '/maruv.mp3', (err, data) => {
+//         bot.sendAudio(msg.chat.id, data).then(()=>{
+//             bot.sendMessage(msg.chat.id, 'Uploading finish')
+//         })
+//     })
+// });
+
+//16 Send picture
+// bot.onText(/\/pic/, msg => {
+//
+//     bot.sendPhoto(msg.chat.id, fs.readFileSync(__dirname + '/car.jpg'))
+//
+// });
+//
+// bot.onText(/\/pic2/, msg => {
+//
+//     bot.sendPhoto(msg.chat.id, './car.jpg', {
+//         caption: 'This is car photo'
+//     })
+//
+// });
 
 // 12,13,14,15
 // const inline_keyboard = [
@@ -83,7 +189,6 @@ bot.on(/\/pic/,  msg=> {
 //         }
 //     })
 // });
-
 
 // 11  Обработка инлайн запросов
 // bot.on('inline_query', query => {

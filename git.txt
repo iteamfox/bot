@@ -1,4 +1,5 @@
-﻿git 
+API https://core.telegram.org/bots/api#available-methods
+
 git remote rm orirgin удалить 
 git remote -v URL соответствует сокращённое имя в Git
 
