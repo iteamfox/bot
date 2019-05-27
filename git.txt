@@ -1,4 +1,14 @@
-API https://core.telegram.org/bots/api#available-methods
+﻿API https://core.telegram.org/bots/api#available-methods
+
+npm init
+npm install node-telegram-bot-api
+npm install telegraf --save
+npm install axios --save
+npm install -g nodemon
+npm install --save-dev nodemon
+
+process.env["NTBA_FIX_319"] = 1;
+
 
 git remote rm orirgin удалить 
 git remote -v URL соответствует сокращённое имя в Git
